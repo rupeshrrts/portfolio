@@ -28,7 +28,7 @@ Files: `functions/chat/index.ts` (Deno entry point) · `functions/_shared/chat-c
 
 ### 1. Database
 Run `database/setup.sql` in **Supabase → SQL Editor** (see `database/README.md`). It creates the chat
-tables and seeds all 40 answerable topics and 51 technology lookups.
+tables and seeds all 39 answerable topics and 51 technology lookups.
 
 ### 2. Secrets
 **Supabase → Edge Functions → Secrets** (or the CLI commands below):

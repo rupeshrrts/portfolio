@@ -3,7 +3,7 @@ export const profile = {
   name: 'Rupesh Kumar',
   firstName: 'Rupesh',
   roles: ['Full Stack Developer', 'Java Spring Boot Developer', 'React & Next.js Developer', 'Generative AI Engineer', 'Agentic AI Engineer'],
-  location: 'Siwan, Bihar · Moving to New Delhi',
+  location: 'Siwan, Bihar, India',
   email: 'rupeshsinghsuntech@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rupesh-kumar-508b1820a/',
   github: 'https://github.com/rupeshrrts',
@@ -90,18 +90,6 @@ export const skills = [
 ];
 
 export const experience = [
-  {
-    role: 'Software Developer · Full Stack',
-    company: 'Digital India Corporation',
-    location: 'MeitY, Govt. of India · New Delhi',
-    period: 'Joining 20 Nov 2026',
-    tag: 'Incoming · GovTech · Full Stack',
-    tech: ['React.js', 'Node.js', 'Java / Spring Boot', 'PostgreSQL', 'LLMs · RAG'],
-    points: [
-      'Will build secure, scalable web applications and REST APIs for Government of India digital initiatives under the Digital India programme.',
-      'Will integrate AI-enabled features (LLMs, Generative AI APIs, RAG) and use AI-assisted development tools for faster, well-validated delivery.',
-    ],
-  },
   {
     role: 'Software Engineer',
     company: 'Godrej Koerber',

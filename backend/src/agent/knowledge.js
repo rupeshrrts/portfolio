@@ -16,7 +16,7 @@ export const TOPICS = [
     keys: { hi: 3, hello: 3, hey: 3, hii: 3, namaste: 3, hola: 3, morning: 2, evening: 2, afternoon: 2, sup: 2 },
     smallTalk: true,
     answer:
-      "Hey there! 👋 I'm Rupesh's portfolio agent. I can tell you about his upcoming role at Digital India Corporation (MeitY), his Java and AI work at Godrej Koerber, his Agentic AI projects like AgentShieldAI, his skills, education or how to reach him. What would you like to know?",
+      "Hey there! 👋 I'm Rupesh's portfolio agent. I can tell you about his Java and AI work at Godrej Koerber, his Agentic AI projects like AgentShieldAI, his skills, education or how to reach him. What would you like to know?",
     suggest: ['Who is Rupesh?', 'What is AgentShieldAI?', 'What are his skills?'],
   },
   {
@@ -47,7 +47,7 @@ export const TOPICS = [
     phrases: ['who is rupesh', 'about rupesh', 'about him', 'tell me about him', 'tell me about rupesh', 'introduce', 'summary', 'overview', 'background', 'his profile'],
     keys: { rupesh: 1, about: 2, who: 1, summary: 3, introduce: 3, introduction: 3, background: 3, profile: 2, overview: 2 },
     answer:
-      'Rupesh Kumar is a Full Stack Developer (Java Spring Boot, React & Next.js) and Generative AI Engineer with 2+ years of experience building enterprise web applications with Java / Spring Boot, React, Next.js, Angular and SQL, plus Generative & Agentic AI features (RAG, MCP, tool calling). He has been selected as a Software Developer (Full Stack Developer role) at Digital India Corporation, MeitY, Government of India, in New Delhi, and joins on 20 Nov 2026.\n\nMost recently he was a Software Engineer at Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026), working on a Warehouse Management System. He also built and launched AgentShieldAI, a live AI-security SaaS, and has qualified GATE CSIT in both 2025 and 2026.',
+      'Rupesh Kumar is a Full Stack Developer (Java Spring Boot, React & Next.js) and Generative AI Engineer with 2+ years of experience building enterprise web applications with Java / Spring Boot, React, Next.js, Angular and SQL, plus Generative & Agentic AI features (RAG, MCP, tool calling).\n\nMost recently he was a Software Engineer at Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026), working on a Warehouse Management System. He also built and launched AgentShieldAI, a live AI-security SaaS, and has qualified GATE CSIT in both 2025 and 2026.',
     suggest: ['What does he do now?', 'What is AgentShieldAI?', 'What are his skills?'],
   },
   {
@@ -82,8 +82,8 @@ export const TOPICS = [
   {
     id: 'location',
     phrases: ['where is he', 'where does he', 'based in', 'where he lives', 'which city', 'home town', 'hometown'],
-    keys: { where: 2, location: 4, located: 4, city: 3, live: 2, lives: 2, based: 3, hometown: 4, from: 1, bihar: 3, siwan: 3, mumbai: 2, delhi: 2 },
-    answer: 'Rupesh is from Siwan, Bihar. He most recently worked in Navi Mumbai and is moving to New Delhi to join Digital India Corporation (MeitY).',
+    keys: { where: 2, location: 4, located: 4, city: 3, live: 2, lives: 2, based: 3, hometown: 4, from: 1, bihar: 3, siwan: 3, mumbai: 2 },
+    answer: 'Rupesh is from Siwan, Bihar, and most recently worked in Navi Mumbai, Maharashtra.',
     suggest: ['Is he open to relocation?', 'What does he do now?'],
   },
   {
@@ -106,21 +106,13 @@ export const TOPICS = [
     phrases: ['work experience', 'how many years', 'years of experience', 'where has he worked', 'previous companies', 'career', 'work history'],
     keys: { experience: 4, experienced: 3, career: 3, worked: 2, work: 1, companies: 3, company: 2, years: 2, year: 1, employer: 3, history: 1, job: 2 },
     answer:
-      'Rupesh has 2+ years of professional experience:\n• Software Developer (Full Stack) — Digital India Corporation, MeitY, Govt. of India, New Delhi (joining 20 Nov 2026)\n• Software Engineer — Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026): Java / Spring Boot WMS, ticketing system, RAG & MCP\n• Associate Software Engineer — Everonic Solutions, Lucknow (5 Aug 2024 – 29 Nov 2025): real-time Vehicle Tracking System (Spring Boot, React, Next.js)\n• Cloud Engineer Intern — IIT Jammu (Jan 2024 – Jul 2024)',
+      'Rupesh has 2+ years of professional experience:\n• Software Engineer — Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026): Java / Spring Boot WMS, ticketing system, RAG & MCP\n• Associate Software Engineer — Everonic Solutions, Lucknow (5 Aug 2024 – 29 Nov 2025): real-time Vehicle Tracking System (Spring Boot, React, Next.js)\n• Cloud Engineer Intern — IIT Jammu (Jan 2024 – Jul 2024)',
     suggest: ['What does he do now?', 'What did he do at Godrej Koerber?', 'What did he build at Everonic?'],
   },
   {
-    id: 'dic',
-    phrases: ['current job', 'current role', 'current company', 'right now', 'currently doing', 'what does he do', 'present company', 'working now', 'working currently', 'where is he working', 'where does he work', 'which company', 'digital india', 'government job'],
-    keys: { dic: 5, meity: 5, digital: 4, india: 2, government: 4, govt: 4, gov: 4, ministry: 4, delhi: 2, fullstack: 3, current: 3, currently: 3, now: 2, working: 2, present: 2 },
-    answer:
-      'Rupesh has been selected as a Software Developer — in a Full Stack Developer role — at Digital India Corporation (DIC), New Delhi, the not-for-profit company under the Ministry of Electronics & Information Technology (MeitY), Government of India, and joins on 20 Nov 2026. There he will:\n• Build secure, scalable web applications and REST APIs for Government of India digital initiatives under the Digital India programme.\n• Integrate AI-enabled features (LLMs, Generative AI APIs, RAG) using AI-assisted development tools.\n\nMost recently he was a Software Engineer at Godrej Koerber (19 Dec 2025 – 18 Sep 2026), building Java / Spring Boot services and Generative AI tooling for a warehouse management product.',
-    suggest: ['What did he do at Godrej Koerber?', 'Tell me about his AI work', 'What are his skills?'],
-  },
-  {
     id: 'godrej',
-    phrases: ['previous job', 'previous company', 'last company', 'last job'],
-    keys: { godrej: 5, koerber: 5, previous: 2, wms: 5, ticket: 3, ticketing: 3, warehouse: 5, sap: 3, supply: 3, chain: 2, logistics: 3, inventory: 3 },
+    phrases: ['current job', 'current role', 'current company', 'right now', 'currently doing', 'what does he do', 'present company', 'working now', 'working currently', 'where is he working', 'where does he work', 'which company', 'previous job', 'previous company', 'last company', 'last job'],
+    keys: { godrej: 5, koerber: 5, current: 3, currently: 3, now: 2, working: 2, present: 2, previous: 2, wms: 5, ticket: 3, ticketing: 3, warehouse: 5, sap: 3, supply: 3, chain: 2, logistics: 3, inventory: 3 },
     answer:
       'Most recently, Rupesh was a Software Engineer at Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026), working on a Warehouse Management System (WMS) web application for supply-chain and logistics clients. There he:\n• Developed WMS modules for inventory, stock movement, receiving, picking, packing and dispatch — Java / Spring Boot REST APIs with Spring Data JPA on SQL Server and an Angular / TypeScript front end.\n• Built a centralized, role-based Ticketing Management System (Next.js, Spring Boot) that replaced email and Excel tracking, with priority-based assignment, status tracking and SLA-based escalation for customer issues.\n• Implemented a RAG pipeline for log analysis that feeds the relevant application and system logs to an LLM, helping the team find root causes faster.\n• Built a custom MCP server exposing SQL Server data as structured tools for an AI agent — natural-language database queries and ad-hoc reporting.\n• Developed and maintained SAP ↔ WMS integration interfaces syncing master data, stock movements and orders with SAP ERP.',
     suggest: ['What is MCP work he has done?', 'What did he do before this?'],
@@ -334,7 +326,6 @@ export const QUESTIONS = {
   resume: 'Where can I download his résumé?',
   links: 'What are his GitHub and LinkedIn profiles?',
   experience: 'What is his work experience?',
-  dic: 'What does he do now?',
   godrej: 'What did he do at Godrej Koerber?',
   everonic: 'What did he build at Everonic?',
   iit: 'What did he do at IIT Jammu?',

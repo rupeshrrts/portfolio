@@ -59,6 +59,22 @@ export async function incrementViews() {
   return db.views;
 }
 
+// In-memory fallback for local development; production uses the shared database counter.
+const localHits = new Map();
+
+/** Counts a hit for `key`; returns false once `limit` is exceeded within the current window. */
+export async function hitRateLimit(key, limit, windowSeconds) {
+  if (supabase) {
+    const { data, error } = await supabase.rpc('hit_rate_limit', { p_key: key, p_limit: limit, p_window_seconds: windowSeconds });
+    if (error) throw error;
+    return data === true;
+  }
+  const windowKey = `${key}:${Math.floor(Date.now() / 1000 / windowSeconds)}`;
+  const hits = (localHits.get(windowKey) || 0) + 1;
+  localHits.set(windowKey, hits);
+  return hits <= limit;
+}
+
 export async function getViews() {
   if (supabase) {
     const { data, error } = await supabase.from('site_stats').select('views').eq('id', 1).single();

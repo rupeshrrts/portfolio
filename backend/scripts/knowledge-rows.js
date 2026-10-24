@@ -5,7 +5,7 @@ import { TOPICS, TECH, CONTACT, QUESTIONS } from '../src/agent/knowledge.js';
 const CATEGORIES = {
   smalltalk: ['greeting', 'thanks', 'bye', 'bot'],
   profile: ['about', 'hire', 'available', 'personal', 'contact', 'location', 'resume', 'links', 'name', 'funfact'],
-  experience: ['experience', 'dic', 'godrej', 'everonic', 'iit'],
+  experience: ['experience', 'godrej', 'everonic', 'iit'],
   skills: ['skills', 'languages', 'frameworks', 'databases', 'ai', 'mcp', 'cloud'],
   projects: ['projects', 'agentshield', 'githubops', 'ragproject', 'cloudlens', 'popmyflix'],
   education: ['education', 'btech', 'class12', 'class10', 'score', 'gate', 'dsa', 'achievements'],

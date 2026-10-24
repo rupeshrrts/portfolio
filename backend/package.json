@@ -9,6 +9,7 @@
     "start": "node server.js",
     "test:agent": "node scripts/test-agent.js",
     "test:chat": "node scripts/test-chat.js",
+    "test:notify": "node scripts/test-notify.js",
     "build:supabase": "node scripts/build-supabase.js"
   },
   "dependencies": {

@@ -50,7 +50,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="pulse" /> Joining Digital India Corporation, MeitY as Full Stack Developer
+            <span className="pulse" /> Full Stack Developer · Java Spring Boot · React & Next.js
           </motion.div>
 
           <h1 className="hero-name" aria-label={profile.name}>

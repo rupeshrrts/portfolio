@@ -16,12 +16,9 @@ const CASES = [
   ['Who is Rupesh?', 'about'],
   ['Tell me about him', 'about'],
   ['Give me a summary of his profile', 'about'],
-  ['What does he do now?', 'dic'],
-  ['What is his current role?', 'dic'],
-  ['where is he working currently', 'dic'],
-  ['Digital India Corporation?', 'dic'],
-  ['does he work for the government', 'dic'],
-  ['MeitY role?', 'dic'],
+  ['What does he do now?', 'godrej'],
+  ['What is his current role?', 'godrej'],
+  ['where is he working currently', 'godrej'],
   ['what was his previous company', 'godrej'],
   ['Does he know Spring Boot?', 'skills'],
   ['What does he do at Godrej Koerber?', 'godrej'],
@@ -98,7 +95,7 @@ const CASES = [
   ['how old is he', 'personal'],
   ['What are his skills and projects?', ['skills', 'projects']],
   ['Where is he based and how can I contact him?', ['location', 'contact']],
-  ['hi, what does he do now?', 'dic'],
+  ['hi, what does he do now?', 'godrej'],
   ['which databases does he know', 'databases'],
   ['what programming languages does he code in', 'languages'],
   ['which frameworks', 'frameworks'],
@@ -126,7 +123,7 @@ const CASES = [
   ['achiev', 'achievements'],
   ['intro', 'about'],
   ['cgpa', 'btech'],
-  ['current', 'dic'],
+  ['current', 'godrej'],
 ];
 
 // Vague questions get "did you mean" suggestions; off-topic ones get the honest fallback.
