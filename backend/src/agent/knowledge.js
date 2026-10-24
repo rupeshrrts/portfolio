@@ -47,7 +47,7 @@ export const TOPICS = [
     phrases: ['who is rupesh', 'about rupesh', 'about him', 'tell me about him', 'tell me about rupesh', 'introduce', 'summary', 'overview', 'background', 'his profile'],
     keys: { rupesh: 1, about: 2, who: 1, summary: 3, introduce: 3, introduction: 3, background: 3, profile: 2, overview: 2 },
     answer:
-      'Rupesh Kumar is a Full Stack Developer (Java Spring Boot, React & Next.js) and Generative AI Engineer with 2+ years of experience building enterprise web applications with Java / Spring Boot, React, Next.js, Angular and SQL, plus Generative & Agentic AI features (RAG, MCP, tool calling).\n\nMost recently he was a Software Engineer at Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026), working on a Warehouse Management System. He also built and launched AgentShieldAI, a live AI-security SaaS, and has qualified GATE CSIT in both 2025 and 2026.',
+      'Rupesh Kumar is a Full Stack Developer (Java Spring Boot, React & Next.js) and Generative AI Engineer with 2+ years of experience building enterprise web applications with Java / Spring Boot, React, Next.js, Angular and SQL, plus Generative & Agentic AI features (RAG, MCP, tool calling). From 20 Nov 2026 he is a Software Developer (Full Stack Developer role) at Digital India Corporation, MeitY, Government of India, in New Delhi.\n\nMost recently he was a Software Engineer at Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026), working on a Warehouse Management System. He also built and launched AgentShieldAI, a live AI-security SaaS, and has qualified GATE CSIT in both 2025 and 2026.',
     suggest: ['What does he do now?', 'What is AgentShieldAI?', 'What are his skills?'],
   },
   {
@@ -106,8 +106,16 @@ export const TOPICS = [
     phrases: ['work experience', 'how many years', 'years of experience', 'where has he worked', 'previous companies', 'career', 'work history'],
     keys: { experience: 4, experienced: 3, career: 3, worked: 2, work: 1, companies: 3, company: 2, years: 2, year: 1, employer: 3, history: 1, job: 2 },
     answer:
-      'Rupesh has 2+ years of professional experience:\n• Software Engineer — Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026): Java / Spring Boot WMS, ticketing system, RAG & MCP\n• Associate Software Engineer — Everonic Solutions, Lucknow (5 Aug 2024 – 29 Nov 2025): real-time Vehicle Tracking System (Spring Boot, React, Next.js)\n• Cloud Engineer Intern — IIT Jammu (Jan 2024 – Jul 2024)',
+      'Rupesh has 2+ years of professional experience:\n• Software Developer (Full Stack) — Digital India Corporation, MeitY, Govt. of India, New Delhi (from 20 Nov 2026)\n• Software Engineer — Godrej Koerber, Navi Mumbai (19 Dec 2025 – 18 Sep 2026): Java / Spring Boot WMS, ticketing system, RAG & MCP\n• Associate Software Engineer — Everonic Solutions, Lucknow (5 Aug 2024 – 29 Nov 2025): real-time Vehicle Tracking System (Spring Boot, React, Next.js)\n• Cloud Engineer Intern — IIT Jammu (Jan 2024 – Jul 2024)',
     suggest: ['What does he do now?', 'What did he do at Godrej Koerber?', 'What did he build at Everonic?'],
+  },
+  {
+    id: 'dic',
+    phrases: ['digital india', 'government job', 'govt job', 'new job', 'next job', 'next role', 'new role', 'upcoming role'],
+    keys: { dic: 5, meity: 5, digital: 4, government: 4, govt: 4, gov: 4, ministry: 4, delhi: 3 },
+    answer:
+      'From 20 Nov 2026, Rupesh is a Software Developer — in a Full Stack Developer role — at Digital India Corporation (DIC), New Delhi, the not-for-profit company under the Ministry of Electronics & Information Technology (MeitY), Government of India. The role covers:\n• Full-stack development of secure, scalable web applications and REST APIs for Government of India digital initiatives under the Digital India programme.\n• Integration of AI-enabled features — LLMs, Generative AI APIs and RAG — using AI-assisted development tools.',
+    suggest: ['What did he do at Godrej Koerber?', 'Tell me about his AI work', 'What are his skills?'],
   },
   {
     id: 'godrej',
@@ -326,6 +334,7 @@ export const QUESTIONS = {
   resume: 'Where can I download his résumé?',
   links: 'What are his GitHub and LinkedIn profiles?',
   experience: 'What is his work experience?',
+  dic: 'What is his role at Digital India Corporation?',
   godrej: 'What did he do at Godrej Koerber?',
   everonic: 'What did he build at Everonic?',
   iit: 'What did he do at IIT Jammu?',

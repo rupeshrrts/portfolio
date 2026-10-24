@@ -91,6 +91,18 @@ export const skills = [
 
 export const experience = [
   {
+    role: 'Software Developer · Full Stack',
+    company: 'Digital India Corporation',
+    location: 'MeitY, Govt. of India · New Delhi',
+    period: 'From 20 Nov 2026',
+    tag: 'GovTech · Full Stack · AI',
+    tech: ['Java / Spring Boot', 'React.js', 'Node.js', 'PostgreSQL', 'REST APIs', 'LLMs · RAG'],
+    points: [
+      'Full-stack development of secure, scalable web applications and REST APIs for Government of India digital initiatives under the Digital India programme.',
+      'Integration of AI-enabled features — LLMs, Generative AI APIs and RAG — using AI-assisted development tools for faster, well-validated delivery.',
+    ],
+  },
+  {
     role: 'Software Engineer',
     company: 'Godrej Koerber',
     location: 'Navi Mumbai, Maharashtra',
