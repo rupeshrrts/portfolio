@@ -18,6 +18,55 @@ const VERDICT = {
   safe: { label: 'Sent safely', icon: '✓' },
 };
 
+// Left-hand copy shared by every large featured card.
+export function FeaturedCopy({ p, icon, liveBadge, ctaLabel }) {
+  return (
+    <div className="featured-copy">
+      <div className="featured-badges">
+        <span className="featured-badge">★ Featured</span>
+        <span className="featured-live">
+          <i /> {liveBadge}
+        </span>
+      </div>
+      <h3 className="featured-title">
+        <span className="featured-shield">{icon}</span> {p.title}
+      </h3>
+      <p className="featured-sub">{p.subtitle}</p>
+      <p className="featured-tagline gradient-text">{p.tagline}</p>
+      <p className="featured-desc">{p.description}</p>
+
+      <ul className="featured-highlights">
+        {p.highlights.map((h) => (
+          <li key={h}>{h}</li>
+        ))}
+      </ul>
+
+      <div className="chip-row">
+        {p.tech.map((t) => (
+          <span key={t} className="chip">
+            {t}
+          </span>
+        ))}
+      </div>
+
+      <div className="featured-cta">
+        <Magnetic>
+          <a href={p.live} target="_blank" rel="noreferrer" className="btn btn-primary">
+            {ctaLabel} <span aria-hidden>↗</span>
+          </a>
+        </Magnetic>
+        {p.repo && (
+          <Magnetic>
+            <a href={p.repo} target="_blank" rel="noreferrer" className="btn btn-ghost">
+              View on GitHub <span aria-hidden>↗</span>
+            </a>
+          </Magnetic>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function FeaturedProject() {
   const [i, setI] = useState(0);
 
@@ -31,42 +80,7 @@ export default function FeaturedProject() {
   return (
     <Reveal className="featured">
       <div className="featured-glow" aria-hidden />
-      <div className="featured-copy">
-        <div className="featured-badges">
-          <span className="featured-badge">★ Featured</span>
-          <span className="featured-live">
-            <i /> Live product
-          </span>
-        </div>
-        <h3 className="featured-title">
-          <span className="featured-shield">🛡</span> {p.title}
-        </h3>
-        <p className="featured-sub">{p.subtitle}</p>
-        <p className="featured-tagline gradient-text">{p.tagline}</p>
-        <p className="featured-desc">{p.description}</p>
-
-        <ul className="featured-highlights">
-          {p.highlights.map((h) => (
-            <li key={h}>{h}</li>
-          ))}
-        </ul>
-
-        <div className="chip-row">
-          {p.tech.map((t) => (
-            <span key={t} className="chip">
-              {t}
-            </span>
-          ))}
-        </div>
-
-        <div className="featured-cta">
-          <Magnetic>
-            <a href={p.live} target="_blank" rel="noreferrer" className="btn btn-primary">
-              Visit live site <span aria-hidden>↗</span>
-            </a>
-          </Magnetic>
-        </div>
-      </div>
+      <FeaturedCopy p={p} icon="🛡" liveBadge="Live product" ctaLabel="Visit live site" />
 
       <div className="featured-visual" aria-hidden>
         <div className="shield-window">

@@ -78,7 +78,7 @@ Do the steps **in this order**. Total time ≈ 30–45 minutes. Everything used 
           (select count(*) from public.chat_tech) as tech,
           (select views from public.site_stats) as views;
    ```
-   Expected: `faqs = 39`, `tech = 51`, `views = 0`.
+   Expected: `faqs = 40`, `tech = 51`, `views = 0`.
 5. Copy your keys (keep them in Notepad for the next steps — **never commit or share the secret one**):
 
    | Value | Where to find it | Used by |

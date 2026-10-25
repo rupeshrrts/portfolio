@@ -4,6 +4,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import SectionTitle from './SectionTitle';
 import Reveal from './Reveal';
 import FeaturedProject from './FeaturedProject';
+import FeaturedGitHubOps from './FeaturedGitHubOps';
 import { projects } from '@/data/profile';
 
 function TiltCard({ project, index }) {
@@ -55,13 +56,20 @@ function TiltCard({ project, index }) {
             </span>
           ))}
         </div>
-        {project.repo ? (
-          <a className="project-link" href={project.repo} target="_blank" rel="noreferrer">
-            View on GitHub <span aria-hidden>↗</span>
-          </a>
-        ) : (
-          <span className="project-link project-link--muted">Private project</span>
-        )}
+        <div className="project-links">
+          {project.live && (
+            <a className="project-link" href={project.live} target="_blank" rel="noreferrer">
+              Live demo <span aria-hidden>↗</span>
+            </a>
+          )}
+          {project.repo ? (
+            <a className="project-link" href={project.repo} target="_blank" rel="noreferrer">
+              View on GitHub <span aria-hidden>↗</span>
+            </a>
+          ) : (
+            !project.live && <span className="project-link project-link--muted">Private project</span>
+          )}
+        </div>
       </motion.article>
     </Reveal>
   );
@@ -73,6 +81,7 @@ export default function Projects() {
       <div className="container">
         <SectionTitle index="04" kicker="selected work" title="Things I've" accent="built." />
         <FeaturedProject />
+        <FeaturedGitHubOps />
         <div className="projects-grid">
           {projects.map((p, i) => (
             <TiltCard key={p.title} project={p} index={i} />

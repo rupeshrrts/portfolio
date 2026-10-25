@@ -1,0 +1,22 @@
+# Dependencies & builds
+node_modules/
+.next/
+out/
+.vercel/
+
+# Secrets — never commit these
+.env
+.env.local
+.env.*.local
+
+# Local-only data (production uses Supabase)
+backend/data/
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.claude/

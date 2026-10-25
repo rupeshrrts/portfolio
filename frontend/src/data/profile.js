@@ -169,19 +169,27 @@ export const featuredProject = {
   live: 'https://rupesh-agentshield-site.vercel.app',
 };
 
+// Second large card, shown right below AgentShieldAI.
+export const githubOpsProject = {
+  title: 'GitHubOps AI',
+  subtitle: 'LangGraph agent · Human-in-the-loop · Live demo',
+  tagline: 'Run GitHub by chat. Approve every change.',
+  description:
+    'A team portal where an AI agent operates your repositories, issues, pull requests and Actions — with roles, admin reviews for risky actions, and an audit log of everything.',
+  highlights: [
+    'Natural-language control of repos, issues, PRs & Actions',
+    'Every write or delete waits for human approval',
+    'Risky actions routed to an admin for review',
+    'Full audit log of every agent action',
+    'Roles & team access, sign in with GitHub',
+    'GitHub token stays in your browser, never in the DB',
+  ],
+  tech: ['Python', 'LangGraph', 'LangChain', 'GitHub API', 'NVIDIA AI', 'Vercel'],
+  live: 'https://githubops-ai.vercel.app/',
+  repo: 'https://github.com/rupeshrrts/githubops-ai',
+};
+
 export const projects = [
-  {
-    title: 'GitHubOps AI',
-    subtitle: 'LangGraph Agent · Human-in-the-Loop',
-    year: 'Aug 2026',
-    description:
-      'A natural-language GitHub automation assistant built with LangGraph workflows and GitHub API tools. Write and delete operations run only after human confirmation, with SQLite checkpointing to save workflow state.',
-    metric: { value: 'HITL', label: 'approval gate on every write' },
-    tech: ['Python', 'LangGraph', 'LangChain', 'Streamlit', 'NVIDIA AI'],
-    gradient: 'linear-gradient(135deg, #a78bfa 0%, #ec4899 100%)',
-    glyph: '◈',
-    repo: 'https://github.com/rupeshrrts/githubops-ai',
-  },
   {
     title: 'RAG-Based GenAI Application',
     subtitle: 'Retrieval-Augmented Generation · Enterprise Use Cases',
