@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { profile, featuredProject, githubOpsProject } from '@/data/profile';
+import { profile, featuredProject, githubOpsProject, resumeBuilderProject } from '@/data/profile';
 import { NAV_LINKS } from './Navbar';
 
 export default function CommandPalette() {
@@ -18,6 +18,7 @@ export default function CommandPalette() {
       { label: 'Copy email address', hint: 'action', run: () => navigator.clipboard?.writeText(profile.email) },
       { label: 'Open AgentShieldAI (live)', hint: 'link', run: () => window.open(featuredProject.live, '_blank') },
       { label: 'Open GitHubOps AI (live demo)', hint: 'link', run: () => window.open(githubOpsProject.live, '_blank') },
+      { label: 'Open Resume Builder (reesume.in)', hint: 'link', run: () => window.open(resumeBuilderProject.live, '_blank') },
       { label: 'Open GitHub', hint: 'link', run: () => window.open(profile.github, '_blank') },
       ...(profile.linkedin
         ? [{ label: 'Open LinkedIn', hint: 'link', run: () => window.open(profile.linkedin, '_blank') }]

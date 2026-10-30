@@ -7,7 +7,7 @@ export const profile = {
   email: 'rupeshsinghsuntech@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rupesh-kumar-508b1820a/',
   github: 'https://github.com/rupeshrrts',
-  resume: '/Rupesh_Kumar_Java_Full_Stack_Resume.pdf',
+  resume: '/RupeshKr.pdf',
   summary:
     'Full Stack Developer with 2+ years of experience building enterprise web applications with REST APIs, Node.js, Angular, React, Next.js and SQL, and shipping Generative & Agentic AI features — tool-calling agents, RAG and MCP tools that connect LLMs to enterprise data. I build Java / Spring Boot backends with Spring Security (JWT), Spring Data JPA, PostgreSQL and Docker, and I\'m strong in API testing, debugging and production support.',
   stats: [
@@ -189,41 +189,49 @@ export const githubOpsProject = {
   repo: 'https://github.com/rupeshrrts/githubops-ai',
 };
 
-export const projects = [
-  {
-    title: 'RAG-Based GenAI Application',
-    subtitle: 'Retrieval-Augmented Generation · Enterprise Use Cases',
-    year: 'Jul 2026',
-    description:
-      'A RAG application with a FastAPI backend and React chat interface that retrieves relevant context to generate LLM answers for real-world enterprise use cases, using custom AI workflow design.',
-    metric: { value: 'RAG', label: 'grounded LLM answers' },
-    tech: ['Python', 'FastAPI', 'React', 'LLM APIs', 'RAG'],
-    gradient: 'linear-gradient(135deg, #fbbf24 0%, #ef4444 100%)',
-    glyph: '⌕',
-  },
-  {
-    title: 'PopMyFlix',
-    subtitle: 'Marketing SaaS Platform',
-    year: 'Jun 2024',
-    description:
-      'An end-to-end marketing SaaS platform with multi-channel ad automation, live payment integration and real-time campaign analytics serving 1,000+ daily requests.',
-    metric: { value: '1,000+', label: 'daily requests' },
-    tech: ['Next.js', 'TypeScript', 'GSAP', 'Framer Motion', 'FastAPI', 'Firebase'],
-    gradient: 'linear-gradient(135deg, #f472b6 0%, #f59e0b 100%)',
-    glyph: '▶',
-  },
-  {
-    title: 'CloudLens',
-    subtitle: 'Cloud Cost Intelligence Platform',
-    year: 'Feb 2023',
-    description:
-      'A SaaS platform integrating AWS, Azure and GCP to visualize real-time cloud spend and recommend ways to reduce idle resource waste.',
-    metric: { value: '3 clouds', label: 'AWS · Azure · GCP in one view' },
-    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Firebase'],
-    gradient: 'linear-gradient(135deg, #22d3ee 0%, #6366f1 100%)',
-    glyph: '☁',
-  },
-];
+// Third large card, shown right below GitHubOps AI.
+export const resumeBuilderProject = {
+  title: 'Resume Builder',
+  logo: '/resume-builder-logo.svg',
+  subtitle: 'ATS resume builder · Live at reesume.in',
+  tagline: 'Build an ATS-ready resume. Download exactly what you see.',
+  description:
+    'A step-by-step resume builder with ATS-friendly templates, scores that explain themselves, and an AI that only rewrites what you already wrote — self-hosted on Azure with auto-deploy on every push.',
+  highlights: [
+    '9 single-column, ATS-readable templates',
+    'The preview is the real PDF — no surprises',
+    'ATS, resume & job-match scores, each explained',
+    'AI rewrites weak bullets, never invents facts',
+    'Export to PDF, Word, TXT, Markdown & JSON',
+    'Job tracker, cover letters & interview prep',
+  ],
+  formats: ['PDF', 'Word', 'TXT', 'Markdown', 'JSON'],
+  tech: ['Next.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'Azure', 'GitHub Actions'],
+  live: 'https://reesume.in',
+};
+
+// Fourth large card, shown right below Resume Builder.
+export const popMyFlixProject = {
+  title: 'PopMyFlix',
+  subtitle: 'Marketing SaaS platform · Jun 2024',
+  tagline: 'Launch ads everywhere. Watch them perform live.',
+  description:
+    'An end-to-end marketing SaaS platform with multi-channel ad automation, live payment integration and real-time campaign analytics — serving 1,000+ daily requests.',
+  highlights: [
+    'Multi-channel ad automation from one dashboard',
+    'Live payment integration',
+    'Real-time campaign analytics',
+    'Serving 1,000+ daily requests',
+    'Smooth, animated UI with GSAP & Framer Motion',
+    'FastAPI back end with Firebase cloud',
+  ],
+  tech: ['Next.js', 'TypeScript', 'GSAP', 'Framer Motion', 'FastAPI', 'Firebase'],
+  // TODO: replace with the exact PopMyFlix repository URL.
+  repo: 'https://github.com/rupeshrrts',
+};
+
+// Smaller tilt cards shown below the featured ones. Add a project here to bring the grid back.
+export const projects = [];
 
 export const education = [
   {

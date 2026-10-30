@@ -5,6 +5,8 @@ import SectionTitle from './SectionTitle';
 import Reveal from './Reveal';
 import FeaturedProject from './FeaturedProject';
 import FeaturedGitHubOps from './FeaturedGitHubOps';
+import FeaturedResumeBuilder from './FeaturedResumeBuilder';
+import FeaturedPopMyFlix from './FeaturedPopMyFlix';
 import { projects } from '@/data/profile';
 
 function TiltCard({ project, index }) {
@@ -82,11 +84,15 @@ export default function Projects() {
         <SectionTitle index="04" kicker="selected work" title="Things I've" accent="built." />
         <FeaturedProject />
         <FeaturedGitHubOps />
-        <div className="projects-grid">
-          {projects.map((p, i) => (
-            <TiltCard key={p.title} project={p} index={i} />
-          ))}
-        </div>
+        <FeaturedResumeBuilder />
+        <FeaturedPopMyFlix />
+        {projects.length > 0 && (
+          <div className="projects-grid">
+            {projects.map((p, i) => (
+              <TiltCard key={p.title} project={p} index={i} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

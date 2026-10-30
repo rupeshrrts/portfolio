@@ -51,11 +51,11 @@ export function FeaturedCopy({ p, icon, liveBadge, ctaLabel }) {
 
       <div className="featured-cta">
         <Magnetic>
-          <a href={p.live} target="_blank" rel="noreferrer" className="btn btn-primary">
+          <a href={p.live || p.repo} target="_blank" rel="noreferrer" className="btn btn-primary">
             {ctaLabel} <span aria-hidden>↗</span>
           </a>
         </Magnetic>
-        {p.repo && (
+        {p.live && p.repo && (
           <Magnetic>
             <a href={p.repo} target="_blank" rel="noreferrer" className="btn btn-ghost">
               View on GitHub <span aria-hidden>↗</span>
